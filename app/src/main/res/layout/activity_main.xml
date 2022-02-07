@@ -170,19 +170,22 @@
     <Switch
         android:id="@+id/switch_location_updates"
         android:layout_width="wrap_content"
-        android:text="Location Updates"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="120dp"
+        android:minHeight="48dp"
+        android:text="Location Updates"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"/>
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <Switch
         android:id="@+id/switch_gps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="120dp"
+        android:minHeight="48dp"
+        android:onClick="onClickGps"
         android:text="GPS/SavePower"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch_location_updates" />
