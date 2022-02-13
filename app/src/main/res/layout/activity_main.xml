@@ -13,7 +13,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:text="Lat"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,7 +24,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:text="Long"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_label_lat" />
 
@@ -35,9 +35,10 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:text="Altitude"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_label_long" />
+
     <TextView
         android:id="@+id/textView_label_accurary"
         android:layout_width="wrap_content"
@@ -45,9 +46,10 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:text="Accurary"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_label_altitude" />
+
     <TextView
         android:id="@+id/textView_label_speed"
         android:layout_width="wrap_content"
@@ -55,9 +57,10 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:text="Speed"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_label_accurary" />
+
     <TextView
         android:id="@+id/textView_label_address"
         android:layout_width="wrap_content"
@@ -65,7 +68,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:text="Address"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_label_speed" />
 
@@ -73,66 +76,74 @@
         android:id="@+id/textView_value_lat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="120dp"
-        android:text="0.0"
-        android:textSize="24sp"
+        android:text="Not available"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_value_long"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="120dp"
-        android:text="0.0"
-        android:textSize="24sp"
+        android:text="Not available"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_value_lat" />
 
     <TextView
         android:id="@+id/textView_value_altitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="120dp"
-        android:text="0.0"
-        android:textSize="24sp"
+        android:text="Not available"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_value_long" />
 
     <TextView
         android:id="@+id/textView_value_accurary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="120dp"
-        android:text="0.0"
-        android:textSize="24sp"
+        android:text="Not available"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_value_altitude" />
 
     <TextView
         android:id="@+id/textView_value_speed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="120dp"
-        android:text="0.0"
-        android:textSize="24sp"
+        android:text="Not available"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_value_accurary" />
 
     <TextView
         android:id="@+id/textView_value_address"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="120dp"
-        android:text="0.0"
-        android:textSize="24sp"
+        android:text="Not available"
+        android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toEndOf="@+id/textView_label_address"
         app:layout_constraintTop_toBottomOf="@+id/textView_value_speed" />
 
     <ImageView
@@ -150,30 +161,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="Updates"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"/>
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <TextView
         android:id="@+id/textView_label_sensor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:text="Sensor"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_label_updates"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView_label_updates" />
 
     <Switch
         android:id="@+id/switch_location_updates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="120dp"
+        android:checked="true"
         android:minHeight="48dp"
+        android:onClick="onClickUpdate"
         android:text="Location Updates"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
@@ -182,33 +195,87 @@
         android:id="@+id/switch_gps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="120dp"
+
+        android:layout_marginEnd="124dp"
         android:minHeight="48dp"
         android:onClick="onClickGps"
         android:text="GPS/SavePower"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch_location_updates" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_off" />
 
     <TextView
         android:id="@+id/textView_off"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
         android:text="Off"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/switch_location_updates"
-        app:layout_constraintTop_toBottomOf="@+id/switch_location_updates"/>
+        app:layout_constraintTop_toBottomOf="@+id/switch_location_updates" />
 
     <TextView
         android:id="@+id/textView_sensor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
         android:text="Cell Tower + WiFi"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/switch_gps"
-        app:layout_constraintTop_toBottomOf="@+id/switch_gps"/>
+        app:layout_constraintTop_toBottomOf="@+id/switch_gps" />
 
+    <TextView
+        android:id="@+id/textView_label_waypoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Waypoint: "
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_sensor" />
+
+    <TextView
+        android:id="@+id/textView_value_waypoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView_label_waypoint"
+        app:layout_constraintTop_toBottomOf="@+id/textView_sensor" />
+
+    <Button
+        android:id="@+id/button_new_waypoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="onClickNewWaypoint"
+        android:text="new waypoint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_label_waypoint" />
+
+    <Button
+        android:id="@+id/button_show_waypoint_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="onClickShowWaypointList"
+        android:text="new waypoint list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_new_waypoint" />
+
+    <Button
+        android:id="@+id/button_show_map"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="onClickShowMap"
+        android:text="show map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_show_waypoint_list"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
